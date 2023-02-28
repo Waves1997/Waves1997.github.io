@@ -22,7 +22,7 @@ function setUserName() {
         setUserName();
     } else {
         localStorage.setItem('name', myName);
-        myHeading.innerHTML =  myName +'臭猪';
+        myHeading.innerHTML = 'Welcome To Video Box,' + myName;
     }
 }
 
@@ -31,7 +31,7 @@ if (!localStorage.getItem('name')) {
     setUserName();
 } else {
     let storedName = localStorage.getItem('name');
-    myHeading.textContent = storedName+'是臭猪';
+    myHeading.textContent = 'Welcome To Video Box,' + storedName;
 }
 
 // 为按钮设置 onclick 事件处理器：
